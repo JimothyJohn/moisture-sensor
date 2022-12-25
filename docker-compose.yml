@@ -1,0 +1,7 @@
+version: "3.8"
+services:
+  uptime-test:
+    build: .
+    restart: unless-stopped
+    devices:
+      - "/dev/ttyUSB0:/dev/ttyUSB0"
